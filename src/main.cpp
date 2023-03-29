@@ -31,13 +31,13 @@ void KelembabanSuhu()
   Serial.println(" H");
 
   // Set the color of the RGB LED based on the temperature value
-  if (temperature < 20)
+  if (temperature < 15)
   {
     digitalWrite(RED_PIN, LOW);
     digitalWrite(GREEN_PIN, HIGH);
     digitalWrite(BLUE_PIN, LOW);
   }
-  else if (temperature >= 20 && temperature < 35)
+  else if (temperature >= 15 && temperature < 20)
   {
     digitalWrite(RED_PIN, LOW);
     digitalWrite(GREEN_PIN, LOW);
